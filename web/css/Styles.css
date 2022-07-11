@@ -43,7 +43,7 @@ body
     border-radius: 4px;
     margin-bottom: 16px;
     border: 1px solid #1f531f;
-    font-size:10px;
+    font-size:11px;
     color: white;
 }
 .btn-fm
@@ -55,6 +55,11 @@ body
    color: white;
 }
 
+#alerta
+{
+    width:7%;
+    height: 7%;
+}
 
 #frame
 {

@@ -3,6 +3,7 @@
     Created on : 10/07/2022, 10:10:19 PM
     Author     : EliasSan
 --%>
+
 <%@page import="beans.Dato" %>
 <%@page import="servlet.Sprocesos" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -47,11 +48,16 @@
                Dato dato[] = new Dato[10];
                dato = (Dato[])request.getAttribute("datos");
                int cont = Integer.parseInt(request.getAttribute("cont").toString());
-               
-              if (cont ==10)
+         
+                  if (cont ==10)
                 {
-                  cont= 0;
+                  out.println("" +
+                              "<div id= 'alerta' class='alert alert-danger' role='alert'>" +
+                               "El array esta lleno!" +
+                               "</div>");
                 }
+         
+            
         %>
           
         <div id="frame">
